@@ -1,0 +1,38 @@
+/*
+	Sira Horradarn, Section AC
+	This is the style sheet for the webpage for a fifteen puzzle website. It contains styles for
+	each html tag and elements that correspond to the instruction given in the specification.
+*/
+
+body {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 14pt;
+    text-align: center;
+}
+
+#output {
+    color: slateblue;
+    font-size: 40pt;
+}
+
+#puzzlearea {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.movable:hover {
+    border-color: red;
+    color: red;
+    cursor: pointer;
+}
+
+.tile {
+    background-image: url(background.jpg);
+    border: 5px solid black;
+    font-size: 40pt;
+    position: absolute;
+    text-align: center;
+    transition: left 0.25s, top 0.25s;
+}
